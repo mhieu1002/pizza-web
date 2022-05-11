@@ -1,0 +1,47 @@
+.w100 {
+  max-width: 100%;
+  background-color: #f5f5f5;
+
+  .about {
+    padding:2rem;
+    margin:0 auto;
+    max-width: 1200px;
+  
+    .box-container{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 35rem);
+      gap:1.5rem;
+      align-items: flex-start;
+      justify-content: center;
+
+      @include phone {
+        grid-template-columns: 1fr;
+      }
+  
+      .box {
+        background-color: $white;
+        border-radius: .5rem;
+        padding:2rem;
+        text-align: center;
+        box-shadow: $box-shadow;
+  
+        img {
+          width: 100%;
+          margin-bottom: 2rem;
+        }
+  
+        h3 {
+          font-size: 2.5rem;
+          color:$black;
+        }
+  
+        p {
+          padding:1rem 0;
+          line-height: 2;
+          font-size: 1.6rem;
+          color:$light-color;
+        }
+      }
+    }
+  }
+}

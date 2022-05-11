@@ -1,0 +1,59 @@
+.search-form {
+  position: fixed;
+  top: -110%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+
+  input {
+    width: 50rem;
+    border-bottom: .1rem solid $white;
+    padding: 1rem 0;
+    color: $white;
+    font-size: 3rem;
+    text-transform: none;
+    background: none;
+
+    &::placeholder {
+      color: #eee;  
+    }
+
+    &::-webkit-search-cancel-button {
+      -webkit-appearance: none;
+    }
+
+    @include medium {
+      width: 90%;
+      margin: 0 1rem;
+    }
+  }
+
+  label {
+    color: $white;
+    cursor: pointer;
+    font-size: 3rem;
+
+    &:hover {
+      color: $red;
+    }
+  }
+
+  .search-close {
+    position: absolute;
+    color: $white;
+    cursor: pointer;
+    top: 2rem;
+    right: 3rem;
+    font-size: 5rem;
+  }
+}
+
+.open-search-form {
+  top: 0;
+}

@@ -1,0 +1,67 @@
+.order {
+  padding: 2rem 9%;
+
+  @include tablet {
+    padding: 2rem;
+  }
+
+  form {
+    max-width: 90rem;
+    border-radius: .5rem;
+    box-shadow: $box-shadow;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    background: #fff;
+    padding: 1.5rem;
+    margin: 0 auto;
+
+    .input {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      &-box {
+        width: 49%;
+
+        @include medium {
+          width: 100%;
+        }
+
+        span {
+          display: block;
+          padding: .5rem 0;
+          font-size: 1.5rem;
+          color: $light-color;
+        }
+
+        input, 
+        textarea, 
+        select{
+          background: #eee;
+          border-radius: .5rem;
+          padding: 1rem;
+          font-size: 1.6rem;
+          color: $black;
+          margin-bottom: 1rem;
+          width: 100%;
+
+          &:focus {
+            border: .1rem solid $light-color;
+          }
+        }
+
+        textarea {
+          height: 20rem;
+          resize: none;
+        }
+      }
+    }
+
+    .btn {
+      margin-top: 0;
+
+      &:hover {
+        letter-spacing: 0 !important;
+      }
+    }
+  }
+}

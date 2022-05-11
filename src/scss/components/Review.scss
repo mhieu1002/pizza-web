@@ -1,0 +1,44 @@
+.review {
+  padding:2rem 0;
+
+  .slide {
+    padding:2rem;
+    box-shadow:$box-shadow;
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    position: relative;  
+
+    .fa-quote-right{
+      position: absolute;
+      top:2rem; right:2rem;
+      font-size: 6rem;
+      color:#ccc;
+    }
+
+    .user-edit{
+      display: flex;
+      gap:1.5rem;
+      align-items: center;
+      padding-bottom: 1.5rem;
+
+      img {
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      h3{
+        color: $black;
+        font-size: 2rem;
+        padding-bottom: .5rem;
+      }
+    }
+
+    p{
+      font-size: 1.5rem;
+      line-height: 1.8;
+      color: $light-color;
+    }
+  }
+}

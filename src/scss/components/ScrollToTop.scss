@@ -1,0 +1,20 @@
+.button__scroll {
+  z-index: 10;
+  position: fixed;
+  bottom: 100px;
+  right: 35px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  font-size: 25px;
+
+  &:hover {
+    background-color: $red;
+  }
+
+  img {
+    margin-top: -3px;
+    height: 35%;
+  }
+}

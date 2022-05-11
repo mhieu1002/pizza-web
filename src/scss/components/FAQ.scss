@@ -1,0 +1,50 @@
+.faq {
+  padding:2rem;
+  margin:0 auto;
+  max-width: 1200px;
+
+  .accordion-container{
+    max-width: 70rem;
+    margin:0 auto;
+
+    .accordion{
+      margin:1.5rem 0;
+      box-shadow: $box-shadow;
+
+      &-heading {
+        padding:1.5rem;
+        background: $black;
+        color: $white;
+        cursor: pointer;
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap:1.5rem;
+      }
+
+      p {
+        padding:2rem;
+        background-color: $white;
+        line-height: 2;
+        color: $light-color;
+        font-size: 1.6rem;
+        display: none;
+      }
+    }
+
+    .accordion-active {
+      .accordion-heading {
+        background: $red;
+
+        i {
+          transform: rotate(180deg);
+        }
+      }
+      
+      p {
+        display: inline-block;
+      }
+    }
+  }
+}

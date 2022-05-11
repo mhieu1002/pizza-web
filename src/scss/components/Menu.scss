@@ -1,0 +1,82 @@
+.menu {
+  padding:2rem;
+  margin:0 auto;
+  max-width: 1200px;
+
+  &-eye {
+    position: absolute;
+    top: 1.5rem;
+    background: #eee;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: $black;
+    right: 1.5rem;
+
+    &:hover {
+      background: $red;
+      color: #fff;
+    }
+  }
+
+  .load-more {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color:$black;
+    cursor: pointer;
+  }
+
+  .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    gap:1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+
+    @include phone {
+      grid-template-columns: 1fr;
+    }
+
+    .box {
+      background-color: $white;
+      border-radius: .5rem;
+      padding:2rem;
+      text-align: center;
+      box-shadow: $box-shadow;
+      position: relative;
+
+      i {
+        cursor: pointer;
+      }
+
+      img {
+        width: 100%;
+        margin-bottom: 2rem;
+
+        &:hover {
+          transform: rotate(15deg);
+        }
+      }
+
+      h3 {
+        font-size: 2.5rem;
+        color: $black;
+      }
+
+      span {
+        color: $red;
+        font-weight: bolder;
+        margin-right: 1rem;
+        font-size: 2.5rem;
+      }
+
+      a:hover {
+        letter-spacing: 0 !important; 
+      }
+    }
+  }
+
+}

@@ -1,0 +1,146 @@
+.show-form {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+
+  .show-close {
+    position: absolute;
+    color: $white;
+    cursor: pointer;
+    top: 2rem;
+    right: 3rem;
+    font-size: 5rem;
+  }
+
+  .show-pizza {
+    display: flex;
+    box-shadow: $box-shadow;
+    padding: 1rem;
+    background-color: $white;
+    width: 75%;
+    height: 95%;
+    border-radius: 20px;
+
+    &-left {
+      justify-content: center;
+      padding:2rem;
+      text-align: center;
+      width: 50%;
+      height: 98%;
+
+      @include tablet {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+        margin-top: 2rem;
+      }
+
+      span {
+        color: $red;
+        font-weight: bolder;
+        margin-right: 1rem;
+        font-size: 3rem;
+      }
+    }
+
+    &-right {
+      float: right;
+      padding: 3rem;
+      width: 50%;
+      height: 98%;
+      background-color: #eee;
+      border-radius: 20px;
+
+      @include tablet {
+        width: 100%;
+        height: 100%;
+      }
+
+      button {
+        margin-top: 6rem;
+
+        @include tablet {
+          margin-top: 16rem;
+        }
+      }
+
+      .boder-top {
+        width: 5%;
+        border-top: 2px solid $red;
+      }
+
+      h3 {
+        padding-top: .5rem;
+        font-size: 2.6rem;
+        color: $black;
+      }
+
+      p {
+        padding-top: 3rem;
+        font-size: 1.8rem;
+        color: $light-color;
+        font-weight: bold;
+      }
+
+      .size {
+        display: flex;
+        border-bottom: 1px solid $red;
+        padding-bottom: 2rem;
+
+        &-box {
+          margin-top: 2rem;
+          background-color: #f7f7f7;
+          border-radius: .5rem;
+          padding:1rem;
+          text-align: center;
+          box-shadow: $box-shadow;
+          width: 33%;
+          cursor: pointer;
+
+          span {
+            color: $black;
+            display: block;
+            font-size: 1.4rem;
+            font-weight: bold;
+          }
+        }
+
+        div ~ div {
+          margin-left: 1rem;
+        }
+      }
+
+      .size-box-active {
+        border: 1px solid $black;
+      }
+
+      .crust {
+        border-bottom: 1px solid $red;
+        padding-bottom: 2rem;
+
+        &-radio {
+          margin-top: 2rem;
+
+          span {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-left: 1.5rem;
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+}
+
+.open-show-form {
+  top: 0;
+}

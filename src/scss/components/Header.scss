@@ -1,0 +1,100 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $white;
+  padding: 1rem 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+  box-shadow: $box-shadow;
+
+  .logo {
+    color: $black;
+    font-size: 2.5rem;
+    font-weight: border;
+  }
+
+  .navbar {
+    @include medium {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background-color: $white;
+      border-top: .1rem solid rgba(0, 0, 0, .2);
+      border-bottom: .1rem solid rgba(0, 0, 0, .2);
+      padding: 1rem;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    a ~ a {
+      margin-left: .4rem;
+
+      @include medium {
+        margin-left: 1rem;
+      }
+    }
+
+    a {
+      font-size: 1.7rem;
+      border-radius: .5rem;
+      padding: .5rem 1.5rem;
+      color: $black;
+
+      &:hover {
+        color: $white;
+        background-color: $red;
+      }
+
+      @include medium {
+        display: block;
+        padding: 1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background-color: #eee;
+      }
+    }
+
+    .on-button {
+      color: $white;
+      background-color: $red;
+    }
+  }
+
+  .active {
+    @include medium {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) ;
+    }
+  }
+
+  .icons {
+    .menu-bars {
+      display: none;
+
+      @include medium {
+        display: inline-block;
+      }
+    }
+
+    i, a{
+      cursor: pointer;
+      margin-left: .5rem;
+      height: 4.5rem;
+      line-height: 4.5rem;
+      width: 4.5rem;
+      text-align: center;
+      font-size: 1.7rem;
+      color: $black;
+      border-radius: 50%;
+      background-color: #eee;
+
+      &:hover {
+        color: $white;
+        background-color: $red;
+      }
+    }
+  }
+}

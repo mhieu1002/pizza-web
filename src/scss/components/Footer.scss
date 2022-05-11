@@ -1,0 +1,46 @@
+.footer {
+  padding:2rem;
+  margin:0 auto;
+  max-width: 1200px;
+
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap:1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+
+    .box {
+      padding:2rem;
+      text-align: center;
+      background-color: $white;
+      box-shadow: $box-shadow;
+      border-radius: .5rem;
+
+      i {
+        height: 6rem;
+        width: 6rem;
+        line-height: 6rem;
+        font-size: 2rem;
+        color: $white;
+        background-color: $red;
+        border-radius: 50%;
+        margin-bottom: .5rem;
+      }
+
+      h3 {
+        margin:1rem 0;
+        color: $black;
+        text-transform: capitalize;
+        font-size: 2rem;
+      }
+
+      p {
+        text-transform: none;
+        line-height: 2;
+        font-size: 1.6rem;
+        color: $light-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+
+@import "./base";
+@import "./mixin";
+@import "./variables";
+
+@import "./components/Header.scss";
+@import "./components/SearchForm.scss";
+@import "./components/Home.scss";
+@import "./components/About.scss";
+@import "./components/Menu.scss";
+@import "./components/Footer.scss";
+@import "./components/ScrollToTop.scss";
+@import "./components/User.scss";
+@import "./components/Order.scss";
+@import "./components/FAQ.scss";
+@import "./components/Review.scss";
+@import "./components/ShowPizza.scss";

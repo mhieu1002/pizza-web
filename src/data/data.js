@@ -41,9 +41,9 @@ const data = {
   pizzaData:[
     {
       id: 1,
-      img: newPizza1,
-      title: "Phoenix Pizza",
-      price: 219,
+      img: secretPizza1,
+      title: "Seafood & Peach",
+      price: 169,
       vnd: ',000đ',
       add: "Add to cart"
     },
@@ -65,25 +65,25 @@ const data = {
     },
     {
       id: 4,
-      img: secretPizza1,
-      title: "Seafood & Peach",
-      price: 169,
+      img: pizza3,
+      title: "Veggie Supreme",
+      price: 225,
       vnd: ',000đ',
       add: "Add to cart"
     },
     {
       id: 5,
-      img: secretPizza2,
-      title: "Seafood Pesto",
-      price: 169,
+      img: pizza12,
+      title: "Pepperoni",
+      price: 135,
       vnd: ',000đ',
       add: "Add to cart"
     },
     {
       id: 6,
-      img: seafoodPizza1,
-      title: "Seafood Cocktail",
-      price: 139,
+      img: pizza11,
+      title: "Supreme Meat Lover's",
+      price: 305,
       vnd: ',000đ',
       add: "Add to cart"
     },
@@ -235,7 +235,8 @@ const data = {
       id: 25,
       img: pizza5,
       title: "Korean BBQ Spicy Beef",
-      price: "235,000đ",
+      price: 235,
+      vnd: ',000đ',
       add: "Add to cart"
     },
     {
@@ -280,25 +281,25 @@ const data = {
     },
     {
       id: 31,
-      img: pizza11,
-      title: "Supreme Meat Lover's",
-      price: 305,
+      img: seafoodPizza1,
+      title: "Seafood Cocktail",
+      price: 139,
       vnd: ',000đ',
       add: "Add to cart"
     },
     {
       id: 32,
-      img: pizza12,
-      title: "Pepperoni",
-      price: 135,
+      img: secretPizza2,
+      title: "Seafood Pesto",
+      price: 169,
       vnd: ',000đ',
       add: "Add to cart"
     },
     {
       id: 33,
-      img: pizza3,
-      title: "Veggie Supreme",
-      price: 225,
+      img: newPizza1,
+      title: "Phoenix Pizza",
+      price: 219,
       vnd: ',000đ',
       add: "Add to cart"
     },

@@ -1,7 +1,7 @@
 .user-form {
   position: fixed;
   top: 0;
-  right: -110%;
+  right: -200%;
   height: 100%;
   width: 100%;
   z-index: 100;
@@ -31,6 +31,10 @@
     padding: 5rem;
     background-color: $white;
 
+    @include phone {
+      width: 90%;
+    }
+
     input {
       display: block;
       width: 40rem;
@@ -40,6 +44,10 @@
       font-size: 1.5rem;
       border-radius: .8rem;
       text-transform: lowercase;
+
+      @include phone {
+        width: 100%;
+      }
     }
 
     input ~ input {
@@ -60,6 +68,10 @@
 
       &:hover {
         background-color: $black;
+      }
+
+      @include phone {
+        width: 100%;
       }
     }
 
@@ -82,14 +94,22 @@
         display: flex;
         margin-bottom: 1rem;
 
+        @include phone {
+          display: block;
+        }
+
         input {
           text-transform: capitalize;
-          width: 19.5rem;
+          width: 100%;
           margin-top: 1rem;
         }
 
         input ~ input {
           margin-left: 1rem;
+
+          @include phone {
+            margin-left: 0;
+          }
         }
       }
     }

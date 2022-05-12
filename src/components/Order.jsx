@@ -1,8 +1,4 @@
 import React from "react";
-import user1 from "../assets/images/user-1.jpg";
-import user2 from "../assets/images/user-2.jpg";
-import user3 from "../assets/images/user-3.jpg";
-import user4 from "../assets/images/user-4.jpg";
 
 const Order = () => {
   return (
@@ -13,7 +9,7 @@ const Order = () => {
           <div className="input">
             <div className="input-box">
               <span>your name</span>
-              <input type="text" placeholder="enter your name" />
+              <input type="text" placeholder="enter your name" required/>
             </div>
             <div className="input-box">
               <span>phone number</span>
@@ -35,7 +31,7 @@ const Order = () => {
             </div>
             <div className="input-box">
               <span>date and time</span>
-              <input type="datetime-local" />
+              <input type="datetime-local" required/>
             </div>
           </div>
           <div className="input">
@@ -44,6 +40,7 @@ const Order = () => {
             <textarea 
               name="" 
               placeholder="enter your address" 
+              required
             />
           </div>
           <div className="input-box">

@@ -36,19 +36,28 @@ const Header = () => {
   const [search, setSearch] = useState(false);
   const [user, setUser] = useState(false);
 
-  // useEffect(() => {
-  //   window.addEventListener("scroll", () => {
-  //     if(window.scrollY < 580) {
-  //       setPage("Home")
-  //     }
-  //     if(window.scrollY > 580) {
-  //       setPage("About")
-  //     }
-  //     if(window.scrollY > 1270) {
-  //       setPage("Menu")
-  //     }
-  //   })
-  // }, [])
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if(window.scrollY < 580) {
+        setPage("Home")
+      }
+      if(window.scrollY > 580) {
+        setPage("About")
+      }
+      if(window.scrollY > 1270) {
+        setPage("Menu")
+      }
+      if(window.scrollY > 2850) {
+        setPage("Review")
+      }
+      if(window.scrollY > 3200) {
+        setPage("Order")
+      }
+      if(window.scrollY > 3780) {
+        setPage("FAQ")
+      }
+    })
+  }, [])
 
   return (
     <div>

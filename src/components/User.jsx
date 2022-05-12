@@ -24,12 +24,14 @@ const User = (user) => {
             placeholder="phone number" 
             type="tel" 
             className="email-box" 
-            pattern="[0]{1}[0-9]{9}" required
+            pattern="[0]{1}[0-9]{9}" 
+            required
           />
           <input 
             placeholder="Password" 
             type="password" 
             className="pass-box" 
+            required
           />
           <button>Log In</button>
         </div>
@@ -39,24 +41,27 @@ const User = (user) => {
         <div className="sign-up">
           <h1>Sign Up</h1>
           <div className="text-box">
-            <input placeholder="first name" type="text" />
-            <input placeholder="surname" type="text" />
+            <input placeholder="first name" type="text" required/>
+            <input placeholder="surname" type="text" required/>
           </div>
           <input 
             placeholder="phone number" 
             type="tel" 
             className="email-box" 
-            pattern="[0]{1}[0-9]{9}" required
+            pattern="[0]{1}[0-9]{9}" 
+            required
           />
           <input
             placeholder="Password"
             type="password"
             className="pass-box"
+            required
           />
           <input
             placeholder="confirm Password"
             type="password"
             className="pass-box"
+            required
           />
           <button>Sign Up</button>
         </div>

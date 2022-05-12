@@ -15,7 +15,7 @@ const Footer = () => {
     {
       class: "fas fa-clock",
       title: "opening hours",
-      content: "9:00 AM to 23:00 PM",
+      content: "10:00 AM to 22:00 PM",
     },
     {
       class: "fas fa-envelope",

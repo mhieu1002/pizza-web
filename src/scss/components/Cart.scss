@@ -1,0 +1,33 @@
+.cart-form {
+  position: fixed;
+  top: 0;
+  right: -200%;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+
+  .cart-close {
+    position: absolute;
+    color: $black;
+    cursor: pointer;
+    top: 2rem;
+    right: 3rem;
+    font-size: 5rem;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color:$black;
+  }
+}
+
+.open-cart-form {
+  right: 0;
+}

@@ -1,4 +1,3 @@
-import newPizza1 from "../assets/images/pizza-new-1.png";
 import newPizza2 from "../assets/images/pizza-new-2.png";
 import newPizza3 from "../assets/images/pizza-new-3.png";
 
@@ -292,14 +291,6 @@ const data = {
       img: secretPizza2,
       title: "Seafood Pesto",
       price: 169,
-      vnd: ',000đ',
-      add: "Add to cart"
-    },
-    {
-      id: 33,
-      img: newPizza1,
-      title: "Phoenix Pizza",
-      price: 219,
       vnd: ',000đ',
       add: "Add to cart"
     },

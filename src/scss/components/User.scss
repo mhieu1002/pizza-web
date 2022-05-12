@@ -100,8 +100,12 @@
 
         input {
           text-transform: capitalize;
-          width: 100%;
+          width: 47%;
           margin-top: 1rem;
+
+          @include phone {
+            width: 100%;
+          }
         }
 
         input ~ input {
